@@ -7,7 +7,7 @@ function PasswordList({ passwords, onDelete, onEdit, error }) {
 
   const handleDelete = async (id) => {
     try {
-      await axios.post(`http://localhost:4000/manage/delete/${id}`, {}, {
+      await axios.post(`https://lock-it-backend.onrender.com/manage/delete/${id}`, {}, {
         withCredentials: true,
       });
       onDelete(); // Trigger refetch after deletion
