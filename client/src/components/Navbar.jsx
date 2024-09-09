@@ -19,7 +19,7 @@ function Navbar() {
   const handleLogout = async () => {
     try {
       console.log('clicked')
-      const response = await axios.post('http://localhost:4000/auth/logout', {}, {
+      const response = await axios.post('https://lock-it-backend.onrender.com/auth/logout', {}, {
         withCredentials: true
       })
 
