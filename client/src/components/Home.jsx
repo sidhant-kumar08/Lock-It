@@ -20,7 +20,7 @@ function Home() {
 
   const fetchPasswords = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/manage/", {
+      const response = await axios.get("https://lock-it-backend.onrender.com/manage/", {
         withCredentials: true,
       });
       setPasswords(response.data);
