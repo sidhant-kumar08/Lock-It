@@ -32,13 +32,13 @@ function AddPassword({ onPasswordAdded, editPassword, setEditPassword }) {
     try {
       if (editPassword) {
         // Edit password functionality
-        await axios.put(`http://localhost:4000/manage/update/${editPassword._id}`, formData, {
+        await axios.put(`https://lock-it-backend.onrender.com/manage/update/${editPassword._id}`, formData, {
           withCredentials: true,
         });
         setEditPassword(null); // Clear the form after editing
       } else {
         // Add password functionality
-        await axios.post("http://localhost:4000/manage/add", formData, {
+        await axios.post("https://lock-it-backend.onrender.com/manage/add", formData, {
           withCredentials: true,
         });
       }
