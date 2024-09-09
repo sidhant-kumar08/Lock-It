@@ -26,7 +26,7 @@ function Register() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:4000/auth/register",
+        "https://lock-it-backend.onrender.com/auth/register",
         formData
       );
       console.log(response);
