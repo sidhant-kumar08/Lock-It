@@ -45,7 +45,7 @@ function Register() {
         <div className="">
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-2 mt-6 md:mt-10 rounded-xl p-10 md:px-16 md:py-14 bg-white md:border md:border-zinc-300"
+            className="flex flex-col gap-2 mt-6 md:mt-10 rounded-xl p-2 md:px-16 md:py-14 bg-white md:border md:border-zinc-300"
           >
             {error && (
               <p className="text-red-500">An error occured, Try again</p>
