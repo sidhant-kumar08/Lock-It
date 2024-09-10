@@ -56,17 +56,17 @@ function Login() {
 
   return (
     <>
-      <div className="font-[geist] bg-white rounded-xl -mt-10" data-aos='fade-down' >
+      <div className="font-[geist] bg-white rounded-xl -mt-16" data-aos='fade-down' >
         <div className="">
           <form
             onSubmit={handleSubmit}
-          className="flex flex-col gap-4 rounded-xl p-10 md:px-24 md:py-14  border border-zinc-300"
+          className="flex flex-col gap-4 rounded-xl p-10 md:px-24 md:py-14  md:border md:border-zinc-300"
           >
 
             {error && <p className="text-red-500 flex items-center justify-center">Login failed</p>}
 
             <div className="justify-center flex flex-col">
-              <h1 className="text-3xl  font-semibold">Login</h1>
+              <h1 className="text-3xl overflow-hidden font-semibold">Login</h1>
               <h6 className="text-sm text-zinc-500">Enter your credentials to login</h6>
             </div>
             <div>
@@ -95,7 +95,7 @@ function Login() {
                 value={formData.password}
                 className=" rounded-lg border border-zinc-300 px-2 py-1"
               />
-              <div className="">
+              <div className="overflow-hidden">
               <button
                 type="submit"
                 className="px-3 py-2 mt-4 w-full justify-center hover:bg-zinc-800 hover:scale-105 transition ease-linear shadow-lg bg-black rounded-lg uppercase text-white font-normal flex items-center gap-1"
