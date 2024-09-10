@@ -60,7 +60,7 @@ function Login() {
         <div className="">
           <form
             onSubmit={handleSubmit}
-          className="flex flex-col gap-4 rounded-xl p-10 md:px-24 md:py-14  md:border md:border-zinc-300"
+          className="flex flex-col gap-4 rounded-xl p-2 md:px-24 md:py-14  md:border md:border-zinc-300"
           >
 
             {error && <p className="text-red-500 flex items-center justify-center">Login failed</p>}
