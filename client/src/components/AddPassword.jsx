@@ -56,7 +56,7 @@ function AddPassword({ onPasswordAdded, editPassword, setEditPassword }) {
     <div className="py-6">
       <div className="flex justify-center items-center mb-8">
         <LockIcon className="h-8 w-8 text-black mr-2" />
-        <h1 className="text-3xl font-semibold text-gray-800">Password Manager</h1>
+        <h1 className="text-3xl overflow-hidden font-semibold text-gray-800">Password Manager</h1>
       </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 p-4 justify-center items-center">
