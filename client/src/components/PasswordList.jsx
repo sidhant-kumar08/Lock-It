@@ -32,7 +32,7 @@ function PasswordList({ passwords, onDelete, onEdit, error }) {
 
       {error && <p>{error}</p>}
       <div className="p-6 border border-zinc-300 rounded-lg shadow-md bg-white">
-        <div className="md:flex-row gap-4 flex-col flex flex-wrap justify-center">
+        <div className="md:flex-row gap-4 p-4 flex-col flex flex-wrap justify-center">
           {passwords.map((password) => (
             <div
               className="border border-zinc-300 shadow-md p-6 md:w-1/5 w-72 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
