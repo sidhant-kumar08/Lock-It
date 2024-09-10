@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Navbar />
 
-      <div className="flex justify-center items-center h-screen bg-[#F3F4F6]">
+      <div className="flex justify-center items-center bg:white h-screen md:bg-[#F3F4F6]">
         <Login />
       </div>
     </div>
