@@ -41,18 +41,18 @@ function Register() {
       <div className=''>
         <Navbar />
       </div>
-      <div className="font-[geist] bg-[#F3F4F6] rounded-xl h-screen flex justify-center" data-aos='fade-down'>
+      <div className="font-[geist] md:bg-[#F3F4F6] rounded-xl h-screen flex justify-center" data-aos='fade-down'>
         <div className="">
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-2 mt-6 md:mt-10 rounded-xl p-10 md:px-16 md:py-14 bg-white border border-zinc-300"
+            className="flex flex-col gap-2 mt-6 md:mt-10 rounded-xl p-10 md:px-16 md:py-14 bg-white md:border md:border-zinc-300"
           >
             {error && (
               <p className="text-red-500">An error occured, Try again</p>
             )}
 
             <div className="flex justify-center flex-col items-center">
-              <h1 className="text-4xl font-bold ">Register</h1>
+              <h1 className="text-4xl overflow-hidden font-bold ">Register</h1>
               <h6 className="text-sm text-zinc-500">Create an account</h6>
             </div>
 
@@ -111,7 +111,7 @@ function Register() {
                 onChange={handleChange}
               />
             </div>
-            <div>
+            <div className='overflow-hidden'>
               <button
                 type="submit"
                 className="px-3 py-2 mt-2 w-full justify-center hover:bg-zinc-800 hover:scale-105 transition ease-linear shadow-lg bg-black rounded-lg uppercase text-white font-normal flex items-center gap-1"
