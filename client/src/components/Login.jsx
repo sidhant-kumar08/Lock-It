@@ -56,7 +56,7 @@ function Login() {
 
   return (
     <>
-      <div className="font-[geist] bg-white rounded-xl md:-mt-16 -mt-20" data-aos='fade-down' >
+      <div className="font-[geist] bg-white rounded-xl md:-mt-16 -mt-24" data-aos='fade-down' >
         <div className="">
           <form
             onSubmit={handleSubmit}
